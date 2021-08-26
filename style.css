@@ -18,16 +18,26 @@ body {
 	padding: 30px 0 20px 0;
 }
 
+.logo__header:hover
+{
+	transform: scale(1.05);
+}
+
 a {
 	text-decoration: none;
 	color: black;
+}
+
+a:hover
+{
+	cursor: pointer;
 }
 
 img {
 	object-fit: cover;
 }
 
-/* Eléments de la page */
+/* Eléments de la page index */
 
 .localisation
 {
@@ -44,6 +54,11 @@ img {
 {
 	transform: translateX(-30px);
     font-size: 1.4rem;
+}
+
+.fa-map-marker-alt:hover
+{
+	cursor: pointer;
 }
 
 .localisation input
@@ -76,6 +91,13 @@ img {
 {
 	margin-bottom: 50px;
     font-size: 1rem;
+}
+
+.btn:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
 }
 
 button
@@ -122,6 +144,17 @@ ul {
     transform: translateX(-150px);
 }
 
+.choice__part a:hover
+{
+	background-color: #feedff;
+  	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.choice__part a:hover i
+{
+	color: #9356dc
+}
+
 .choice__part li a
 {
 	display: flex;
@@ -159,4 +192,396 @@ ul {
 .fa-store
 {
 	margin-right: 26px;
+}
+
+.restaurants
+{
+	background-color: rgb(246, 246, 246);
+    padding: 20px;
+}
+
+.restaurants h3
+{
+	margin: 15px 0px;
+    padding-left: 5px;
+}
+
+.restaurantCards figure
+{
+	flex: 1;
+    flex-direction: column;
+    height: 240px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 1px rgb(36 36 36 / 10%);
+    position: relative;
+    margin: 15px 0;
+}
+
+.restaurantCards figure:hover
+{
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.newPatch
+{
+	position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: #99e2d0;
+    color: #008160;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+figure img
+{
+	height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+figcaption
+{
+	display: flex;
+    padding: 16px 0 16px 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurantName
+{
+	flex-direction: column;
+}
+
+figcaption p
+{
+	margin-top: 5px
+}
+
+.heart
+{
+	padding-right: 15px;
+	display: flex;
+}
+
+.fa-2x
+{
+	font-size: 2em
+}
+
+.ft
+{
+	background-clip: text;
+	color: transparent;
+	position: absolute;
+}
+
+.ft:hover
+{
+	cursor: pointer;
+  	background: linear-gradient(#9356dc, #ff79da);
+  	background-size: 100% 100%;
+  	background-clip: text;
+  	background-position: bottom;
+  	background-repeat: no-repeat;
+  	animation: animationHeart 0.5s linear;
+}
+
+.ft:active
+{
+	cursor: pointer;
+  	background: linear-gradient(#9356dc, #ff79da);
+  	background-size: 100% 100%;
+  	background-clip: text;
+  	background-position: bottom;
+  	background-repeat: no-repeat;
+  	animation: animationHeart 0.5s linear;
+}
+
+/* Footer */
+
+footer
+{
+	background-color: rgb(53, 53, 53);
+	color: white;
+	padding: 20px;
+}
+
+footer a
+{
+	color: white;
+}
+
+footer a:hover
+{
+	color: #9356dc
+}
+
+footer h3
+{
+	font-family: "shrikhand", sans-serif;
+	font-size: 1.2rem;
+	font-weight: 100;
+	margin-bottom: 15px;
+}
+
+footer li
+{
+	margin: 8px 0;
+}
+
+.fa-utensils
+{
+	padding-right: 15px;
+}
+
+.fa-hands-helping
+{
+	padding-right: 8px;
+}
+
+/* Eléments des pages des restaurants */
+
+.pages
+{
+	position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.fa-arrow-left
+{
+	font-size: 1.7rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.pagesPic
+{
+	height: 300px;
+    width: 100%;
+    position: fixed;
+    z-index: -2;
+    top: 70px;
+}
+
+.meal
+{
+	border-radius: 20px 20px 0 0;
+    background-color: rgb(246, 246, 246);
+    margin: 320px 0 0;
+    animation: slideIn 1s both;
+    transition: 500ms ease-out;
+}
+
+.mealHeader
+{
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.h2__pages
+{
+	font-family: "shrikhand", sans-serif;
+	font-weight: 400;
+	padding: 15px;
+}
+
+h2
+{
+	font-size: 1.7rem;
+	padding: 30px 50px;
+}
+
+.meal__patch
+{
+	flex: 1;
+	animation: smd 1500ms 500ms both;
+}
+
+.meal__patch:nth-child(1)
+{
+	animation-delay: 900ms;
+	transition: 700ms ease-in;
+}
+
+.meal__patch:nth-child(2)
+{
+	animation-delay: 1200ms;
+	transition: 700ms ease-out;
+}
+
+.meal__patch:nth-child(3)
+{
+	animation-delay: 1500ms;
+	transition: 700ms ease-out;
+}
+
+.titleMeal
+{
+	padding: 15px;
+}
+
+.meal__patch h3
+{
+	font-weight: 200;
+}
+
+.line
+{
+	height: 3px;
+    width: 30px;
+    background-color: #99e2d0;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.dish__cards
+{
+	display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    padding: 15px;
+}
+
+.dish__patch
+{
+	display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 1px rgb(36 36 36 / 10%);
+    overflow: hidden;
+}
+
+.textDish
+{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+
+.textDish h4
+{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.textDish p
+{
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.price
+{
+	align-self: flex-end;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+.checked
+{
+	display: flex;
+    background-color: #99e2d0;
+    justify-content: center;
+    align-items: center;
+    margin: -20px -90px -20px 15px;
+    width: 70px;
+    transition-duration: 0.7s;
+}
+
+.checked i
+{
+	font-size: 1.5rem;
+	color: white;
+}
+
+.dish__patch:hover
+{
+	cursor: pointer;
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.dish__patch:active
+{
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.dish__patch:hover i
+{
+	transform: rotate(1turn);
+	transition: 450ms 200ms ease-out;
+}
+
+.dish__patch:active i
+{
+	transform: rotate(1turn);
+	transition: 450ms 200ms ease-out;
+}
+
+.dish__patch:hover .checked
+{
+	margin-right: -20px;
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+	cursor: pointer;
+}
+
+.dish__patch:active .checked
+{
+	margin-right: -20px;
+	box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.button
+{
+	display: flex;
+	justify-content: center;
+}
+
+.meal button
+{
+	margin: 40px 0 60px 0;
+}
+
+/* keyframes */
+
+@keyframes slideIn {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes smd {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes animationHeart {
+	0% {
+		background-size: 100% 0%;
+	}
+	100% {
+		background-size: 100% 100%
+	}
 }
